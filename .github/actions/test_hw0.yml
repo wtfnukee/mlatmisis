@@ -1,4 +1,4 @@
-name: Test Homework 01
+name: Test Homework 0
 
 on:
   workflow_dispatch:
@@ -19,4 +19,4 @@ jobs:
       - name: Run tests  
         run: |
           cd homeworks/hw0/
-          python -m unittest tests/test.py
+          python -m unittest tests/*.py

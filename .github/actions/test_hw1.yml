@@ -1,0 +1,26 @@
+name: Test Homework 1
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.13"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r homeworks/hw1/requirements.txt
+          pip install nbconvert nbformat ipykernel
+      - name: Convert Jupyter Notebook to Python Script
+        run: |
+          jupyter nbconvert --to script homeworks/hw1/homework.ipynb --output homeworks/hw1/homework.py
+      - name: Run tests  
+        run: |
+          cd homeworks/hw1/
+          python -m unittest discover -s tests -p "*.py"

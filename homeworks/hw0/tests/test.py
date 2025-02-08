@@ -1,5 +1,6 @@
 import unittest
-from homeworks.hw0.task import hello
+import import_ipynb
+from homework import hello
 
 
 class TestHello(unittest.TestCase):
