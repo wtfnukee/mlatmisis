@@ -1,8 +1,8 @@
 import unittest
 import numpy as np
 import pandas as pd
-import import_ipynb
-from homework import (
+import import_ipynb  # noqa: F401
+from homework import (  # type: ignore
     border,
     checkerboard,
     sub,
