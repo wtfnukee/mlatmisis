@@ -3,7 +3,7 @@ import import_ipynb
 from homework import hello
 
 
-class TestHello(unittest.TestCase):
+class TestHomework0(unittest.TestCase):
     def test_main_returns_hello_world(self):
         expected = "Привет, мир!"
         result = hello()

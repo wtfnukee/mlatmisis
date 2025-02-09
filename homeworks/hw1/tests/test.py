@@ -113,6 +113,7 @@ class TestHomework1(unittest.TestCase):
         self.setUp_pandas()
         result = mean_table(self.df)
 
+        # Check structure
         self.assertIsInstance(result, pd.DataFrame)
         self.assertEqual(result.index.name, "animal")
         self.assertEqual(result.columns.name, "visits")

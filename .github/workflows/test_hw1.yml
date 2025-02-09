@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  test_hello:
+  test_homework1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
