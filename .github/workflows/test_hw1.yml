@@ -17,9 +17,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r homeworks/hw1/requirements.txt
           pip install nbconvert nbformat ipykernel
-      - name: Convert Jupyter Notebook to Python Script
-        run: |
-          jupyter nbconvert --to script homeworks/hw1/homework.ipynb --output homeworks/hw1/homework.py
       - name: Run tests  
         run: |
           cd homeworks/hw1/
