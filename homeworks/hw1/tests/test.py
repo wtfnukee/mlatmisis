@@ -11,6 +11,7 @@ from homework import (  # type: ignore
     cats,
     mean_table,
     threesome,
+    plots,
 )
 
 
@@ -113,7 +114,6 @@ class TestHomework1(unittest.TestCase):
         self.setUp_pandas()
         result = mean_table(self.df)
 
-        # Check structure
         self.assertIsInstance(result, pd.DataFrame)
         self.assertEqual(result.index.name, "animal")
         self.assertEqual(result.columns.name, "visits")
@@ -131,6 +131,9 @@ class TestHomework1(unittest.TestCase):
         )
         result = threesome()
         pd.testing.assert_series_equal(result, expected)
+
+    def test_plots(self):
+        self.assertTrue(plots)
 
 
 if __name__ == "__main__":
