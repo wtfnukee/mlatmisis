@@ -1,7 +1,6 @@
 import unittest
-import import_ipynb  # noqa: F401
+import import_ipynb # noqa: F401
 from homework import hello  # type: ignore
-
 
 class TestHomework0(unittest.TestCase):
     def test_main_returns_hello_world(self):
