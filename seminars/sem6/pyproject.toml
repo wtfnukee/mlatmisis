@@ -1,0 +1,15 @@
+[project]
+name = "sem6"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "catboost",
+    "xgboost",
+    "lightgbm",
+    "ipykernel",
+]
